@@ -1,0 +1,510 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		608F63381DE72BBB0095287A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 608F63371DE72BBB0095287A /* main.m */; };
+		608F633B1DE72BBB0095287A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 608F633A1DE72BBB0095287A /* AppDelegate.m */; };
+		608F633D1DE72BBB0095287A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 608F633C1DE72BBB0095287A /* Assets.xcassets */; };
+		608F63401DE72BBB0095287A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 608F633E1DE72BBB0095287A /* LaunchScreen.storyboard */; };
+		608F634B1DE72BBB0095287A /* BeeQuick_TwoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 608F634A1DE72BBB0095287A /* BeeQuick_TwoTests.m */; };
+		608F63561DE72BBB0095287A /* BeeQuick_TwoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 608F63551DE72BBB0095287A /* BeeQuick_TwoUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		608F63471DE72BBB0095287A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 608F632B1DE72BBB0095287A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 608F63321DE72BBB0095287A;
+			remoteInfo = BeeQuick_Two;
+		};
+		608F63521DE72BBB0095287A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 608F632B1DE72BBB0095287A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 608F63321DE72BBB0095287A;
+			remoteInfo = BeeQuick_Two;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		608F63331DE72BBB0095287A /* BeeQuick_Two.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeeQuick_Two.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		608F63371DE72BBB0095287A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		608F63391DE72BBB0095287A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		608F633A1DE72BBB0095287A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		608F633C1DE72BBB0095287A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		608F633F1DE72BBB0095287A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		608F63411DE72BBB0095287A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		608F63461DE72BBB0095287A /* BeeQuick_TwoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeeQuick_TwoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		608F634A1DE72BBB0095287A /* BeeQuick_TwoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BeeQuick_TwoTests.m; sourceTree = "<group>"; };
+		608F634C1DE72BBB0095287A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		608F63511DE72BBB0095287A /* BeeQuick_TwoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeeQuick_TwoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		608F63551DE72BBB0095287A /* BeeQuick_TwoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BeeQuick_TwoUITests.m; sourceTree = "<group>"; };
+		608F63571DE72BBB0095287A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		608F63301DE72BBB0095287A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		608F63431DE72BBB0095287A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		608F634E1DE72BBB0095287A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		608F632A1DE72BBB0095287A = {
+			isa = PBXGroup;
+			children = (
+				608F63351DE72BBB0095287A /* BeeQuick_Two */,
+				608F63491DE72BBB0095287A /* BeeQuick_TwoTests */,
+				608F63541DE72BBB0095287A /* BeeQuick_TwoUITests */,
+				608F63341DE72BBB0095287A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		608F63341DE72BBB0095287A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				608F63331DE72BBB0095287A /* BeeQuick_Two.app */,
+				608F63461DE72BBB0095287A /* BeeQuick_TwoTests.xctest */,
+				608F63511DE72BBB0095287A /* BeeQuick_TwoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		608F63351DE72BBB0095287A /* BeeQuick_Two */ = {
+			isa = PBXGroup;
+			children = (
+				608F63391DE72BBB0095287A /* AppDelegate.h */,
+				608F633A1DE72BBB0095287A /* AppDelegate.m */,
+				608F633C1DE72BBB0095287A /* Assets.xcassets */,
+				608F633E1DE72BBB0095287A /* LaunchScreen.storyboard */,
+				608F63411DE72BBB0095287A /* Info.plist */,
+				608F63361DE72BBB0095287A /* Supporting Files */,
+			);
+			path = BeeQuick_Two;
+			sourceTree = "<group>";
+		};
+		608F63361DE72BBB0095287A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				608F63371DE72BBB0095287A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		608F63491DE72BBB0095287A /* BeeQuick_TwoTests */ = {
+			isa = PBXGroup;
+			children = (
+				608F634A1DE72BBB0095287A /* BeeQuick_TwoTests.m */,
+				608F634C1DE72BBB0095287A /* Info.plist */,
+			);
+			path = BeeQuick_TwoTests;
+			sourceTree = "<group>";
+		};
+		608F63541DE72BBB0095287A /* BeeQuick_TwoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				608F63551DE72BBB0095287A /* BeeQuick_TwoUITests.m */,
+				608F63571DE72BBB0095287A /* Info.plist */,
+			);
+			path = BeeQuick_TwoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		608F63321DE72BBB0095287A /* BeeQuick_Two */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 608F635A1DE72BBB0095287A /* Build configuration list for PBXNativeTarget "BeeQuick_Two" */;
+			buildPhases = (
+				608F632F1DE72BBB0095287A /* Sources */,
+				608F63301DE72BBB0095287A /* Frameworks */,
+				608F63311DE72BBB0095287A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BeeQuick_Two;
+			productName = BeeQuick_Two;
+			productReference = 608F63331DE72BBB0095287A /* BeeQuick_Two.app */;
+			productType = "com.apple.product-type.application";
+		};
+		608F63451DE72BBB0095287A /* BeeQuick_TwoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 608F635D1DE72BBB0095287A /* Build configuration list for PBXNativeTarget "BeeQuick_TwoTests" */;
+			buildPhases = (
+				608F63421DE72BBB0095287A /* Sources */,
+				608F63431DE72BBB0095287A /* Frameworks */,
+				608F63441DE72BBB0095287A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				608F63481DE72BBB0095287A /* PBXTargetDependency */,
+			);
+			name = BeeQuick_TwoTests;
+			productName = BeeQuick_TwoTests;
+			productReference = 608F63461DE72BBB0095287A /* BeeQuick_TwoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		608F63501DE72BBB0095287A /* BeeQuick_TwoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 608F63601DE72BBB0095287A /* Build configuration list for PBXNativeTarget "BeeQuick_TwoUITests" */;
+			buildPhases = (
+				608F634D1DE72BBB0095287A /* Sources */,
+				608F634E1DE72BBB0095287A /* Frameworks */,
+				608F634F1DE72BBB0095287A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				608F63531DE72BBB0095287A /* PBXTargetDependency */,
+			);
+			name = BeeQuick_TwoUITests;
+			productName = BeeQuick_TwoUITests;
+			productReference = 608F63511DE72BBB0095287A /* BeeQuick_TwoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		608F632B1DE72BBB0095287A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = MinJing_Lin;
+				TargetAttributes = {
+					608F63321DE72BBB0095287A = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+					608F63451DE72BBB0095287A = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 608F63321DE72BBB0095287A;
+					};
+					608F63501DE72BBB0095287A = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 608F63321DE72BBB0095287A;
+					};
+				};
+			};
+			buildConfigurationList = 608F632E1DE72BBB0095287A /* Build configuration list for PBXProject "BeeQuick_Two" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 608F632A1DE72BBB0095287A;
+			productRefGroup = 608F63341DE72BBB0095287A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				608F63321DE72BBB0095287A /* BeeQuick_Two */,
+				608F63451DE72BBB0095287A /* BeeQuick_TwoTests */,
+				608F63501DE72BBB0095287A /* BeeQuick_TwoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		608F63311DE72BBB0095287A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				608F633D1DE72BBB0095287A /* Assets.xcassets in Resources */,
+				608F63401DE72BBB0095287A /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		608F63441DE72BBB0095287A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		608F634F1DE72BBB0095287A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		608F632F1DE72BBB0095287A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				608F633B1DE72BBB0095287A /* AppDelegate.m in Sources */,
+				608F63381DE72BBB0095287A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		608F63421DE72BBB0095287A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				608F634B1DE72BBB0095287A /* BeeQuick_TwoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		608F634D1DE72BBB0095287A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				608F63561DE72BBB0095287A /* BeeQuick_TwoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		608F63481DE72BBB0095287A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 608F63321DE72BBB0095287A /* BeeQuick_Two */;
+			targetProxy = 608F63471DE72BBB0095287A /* PBXContainerItemProxy */;
+		};
+		608F63531DE72BBB0095287A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 608F63321DE72BBB0095287A /* BeeQuick_Two */;
+			targetProxy = 608F63521DE72BBB0095287A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		608F633E1DE72BBB0095287A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				608F633F1DE72BBB0095287A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		608F63581DE72BBB0095287A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		608F63591DE72BBB0095287A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		608F635B1DE72BBB0095287A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BeeQuick_Two/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "LMJ.BeeQuick-Two";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		608F635C1DE72BBB0095287A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BeeQuick_Two/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "LMJ.BeeQuick-Two";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		608F635E1DE72BBB0095287A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BeeQuick_TwoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "LMJ.BeeQuick-TwoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BeeQuick_Two.app/BeeQuick_Two";
+			};
+			name = Debug;
+		};
+		608F635F1DE72BBB0095287A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BeeQuick_TwoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "LMJ.BeeQuick-TwoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BeeQuick_Two.app/BeeQuick_Two";
+			};
+			name = Release;
+		};
+		608F63611DE72BBB0095287A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BeeQuick_TwoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "LMJ.BeeQuick-TwoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BeeQuick_Two;
+			};
+			name = Debug;
+		};
+		608F63621DE72BBB0095287A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BeeQuick_TwoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "LMJ.BeeQuick-TwoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BeeQuick_Two;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		608F632E1DE72BBB0095287A /* Build configuration list for PBXProject "BeeQuick_Two" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				608F63581DE72BBB0095287A /* Debug */,
+				608F63591DE72BBB0095287A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		608F635A1DE72BBB0095287A /* Build configuration list for PBXNativeTarget "BeeQuick_Two" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				608F635B1DE72BBB0095287A /* Debug */,
+				608F635C1DE72BBB0095287A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		608F635D1DE72BBB0095287A /* Build configuration list for PBXNativeTarget "BeeQuick_TwoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				608F635E1DE72BBB0095287A /* Debug */,
+				608F635F1DE72BBB0095287A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		608F63601DE72BBB0095287A /* Build configuration list for PBXNativeTarget "BeeQuick_TwoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				608F63611DE72BBB0095287A /* Debug */,
+				608F63621DE72BBB0095287A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 608F632B1DE72BBB0095287A /* Project object */;
+}
