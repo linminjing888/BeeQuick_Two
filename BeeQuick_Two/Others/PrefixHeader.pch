@@ -18,6 +18,7 @@
 #import "UIImageView+Extention.h"
 #import "UIColor+UIColor_Hex.h"
 #import "AppConst.h"
+#import "UIView+Toast.h"
 
 #define WEAKSELf __weak typeof(self) weakSelf = self;
 
@@ -40,7 +41,6 @@
 #endif
 
 typedef NS_ENUM(NSInteger, HeadViewItemType) {
-    HeadViewItemTypePage,
     HeadViewItemTypeHot,
     HeadViewItemTypeHeadline,
     HeadViewItemTypeBrand,

@@ -14,15 +14,15 @@
 #import "HomeHeaderCell.h"
 #import "HomeHeaderData.h"
 #import "HomeHeaderView.h"
-#import "WebViewController.h"
 #import "UIViewController+NavBarHidden.h"
+
 static const CGFloat HomeMargin = 10;
 static NSString *homeCellId = @"HomeCellId";
 static NSString *homeCategoryCellId = @"HomeCategoryCellId";
 static NSString *footerCellId = @"FooterCellId";
 static NSString *headerCellId = @"HeaderCellId";
 
-@interface ViewController ()<UICollectionViewDelegate,UICollectionViewDataSource>
+@interface ViewController ()<UICollectionViewDelegate,UICollectionViewDataSource,UIScrollViewDelegate>
 
 @property (nonatomic,strong) UICollectionView *collectionView;
 @property (nonatomic,strong) NSArray<Goods *> * freshHots;
@@ -49,14 +49,25 @@ static NSString *headerCellId = @"HeaderCellId";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.view.backgroundColor =COLOR_YELLOW;
+    self.automaticallyAdjustsScrollViewInsets = NO;
     
+    [self setTitleView];
     [self buildCollectionView];
     [self setUpData];
     [self addNotification];
     
-    [self setKeyScrollView:self.collectionView scrolOffsetY:200 options:HYHidenControlOptionTitle | HYHidenControlOptionLeft];
+    [self setKeyScrollView:self.collectionView scrolOffsetY: 200 options:HYHidenControlOptionTitle];
+    [self setNavBarBackgroundImage:[UIImage createImageWithColor:COLOR_YELLOW]];
 
+}
+
+-(void)setTitleView
+{
+    UILabel * titleLabel =[[UILabel alloc]init];
+    titleLabel.text = @"爱鲜蜂";
+    [titleLabel sizeToFit];
+    titleLabel.textColor = [UIColor redColor];
+    self.navigationItem.titleView = titleLabel;
 }
 -(void)setUpData
 {
@@ -78,10 +89,7 @@ static NSString *headerCellId = @"HeaderCellId";
 }
 -(void)showActityDetail:(HeadViewItemType)type tag:(NSInteger)tag
 {
-    NSLog(@"%ld--%ld",type,tag);
-//    ActInfo *actInfo = self.homeHeadData.act_info[type];
-//    Activity *activity = actInfo.act_rows[tag].activity;
-//    [self presentViewController:[[WebViewController alloc]initWithActivity:activity] animated:YES completion:nil];
+    [self.view makeToast:[NSString stringWithFormat:@"  %ld--%ld  ",type,tag] duration:1 position:CSToastPositionCenter];
 }
 -(void)buildCollectionView
 {
@@ -99,10 +107,10 @@ static NSString *headerCellId = @"HeaderCellId";
     self.collectionView.dataSource = self;
     [self.view addSubview:self.collectionView];
     [self.collectionView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.mas_equalTo(64);
+        make.top.mas_equalTo(0);
         make.left.mas_equalTo(0);
         make.right.mas_equalTo(0);
-        make.height.mas_equalTo(LSCREENH-64);
+        make.height.mas_equalTo(LSCREENH);
 //        make.edges.equalTo(self.view);
     }];
     LMJRefreshHeader *header = [LMJRefreshHeader headerWithRefreshingTarget:self refreshingAction:@selector(headerRefresh)];
@@ -122,6 +130,7 @@ static NSString *headerCellId = @"HeaderCellId";
     self.collectionView.contentInset = UIEdgeInsetsMake(height, 0, 0, 0);
     self.collectionView.contentOffset = CGPointMake(0, -height);
     
+   
 }
 - (void)dealloc {
     [[NSNotificationCenter defaultCenter] removeObserver:self];
@@ -201,6 +210,7 @@ static NSString *headerCellId = @"HeaderCellId";
         [self.collectionView.mj_header endRefreshing];
     });
 }
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

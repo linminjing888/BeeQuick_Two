@@ -5,6 +5,22 @@
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "608F63321DE72BBB0095287A"
+               BuildableName = "BeeQuick_Two.app"
+               BlueprintName = "BeeQuick_Two"
+               ReferencedContainer = "container:BeeQuick_Two.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
    </BuildAction>
    <TestAction
       buildConfiguration = "Debug"
@@ -12,7 +28,36 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "608F63451DE72BBB0095287A"
+               BuildableName = "BeeQuick_TwoTests.xctest"
+               BlueprintName = "BeeQuick_TwoTests"
+               ReferencedContainer = "container:BeeQuick_Two.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "608F63501DE72BBB0095287A"
+               BuildableName = "BeeQuick_TwoUITests.xctest"
+               BlueprintName = "BeeQuick_TwoUITests"
+               ReferencedContainer = "container:BeeQuick_Two.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "608F63321DE72BBB0095287A"
+            BuildableName = "BeeQuick_Two.app"
+            BlueprintName = "BeeQuick_Two"
+            ReferencedContainer = "container:BeeQuick_Two.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -26,6 +71,23 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "608F63321DE72BBB0095287A"
+            BuildableName = "BeeQuick_Two.app"
+            BlueprintName = "BeeQuick_Two"
+            ReferencedContainer = "container:BeeQuick_Two.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+      <EnvironmentVariables>
+         <EnvironmentVariable
+            key = "OS_ACTIVITY_MODE"
+            value = "disable"
+            isEnabled = "YES">
+         </EnvironmentVariable>
+      </EnvironmentVariables>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -35,6 +97,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "608F63321DE72BBB0095287A"
+            BuildableName = "BeeQuick_Two.app"
+            BlueprintName = "BeeQuick_Two"
+            ReferencedContainer = "container:BeeQuick_Two.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

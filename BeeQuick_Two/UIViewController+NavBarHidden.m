@@ -53,9 +53,9 @@ static const char * scrolOffsetYKey = "offsetY";
 
 - (void)setScrolOffsetY:(CGFloat)scrolOffsetY{
     
-    if ([self doDeviceVersion] <= 5) {
-        return;
-    }
+//    if ([self doDeviceVersion] <= 5) {
+//        return;
+//    }
     objc_setAssociatedObject(self, scrolOffsetYKey, @(scrolOffsetY), OBJC_ASSOCIATION_ASSIGN);
 }
 
@@ -88,8 +88,8 @@ static const char * hy_hidenControlOptionsKey = "hy_hidenControlOptions";
 - (void)setInViewWillDisappear{
 
     [[[self.navigationController.navigationBar subviews]objectAtIndex:0] setAlpha:1];
-    [self.navigationController.navigationBar setBackgroundImage:nil forBarMetrics:UIBarMetricsDefault];
-    [self.navigationController.navigationBar setShadowImage:nil];
+    [self.navigationController.navigationBar setBackgroundImage:[[UIImage alloc]init] forBarMetrics:UIBarMetricsDefault];
+    [self.navigationController.navigationBar setShadowImage:[[UIImage alloc]init]];
 }
 
 - (void)setKeyScrollView:(UIScrollView *)keyScrollView scrolOffsetY:(CGFloat)scrolOffsetY options:(HYHidenControlOptions)options{
@@ -105,9 +105,17 @@ static const char * hy_hidenControlOptionsKey = "hy_hidenControlOptions";
 static CGFloat alpha = 0;
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSString *,id> *)change context:(void *)context{
     
-    CGFloat offsetY = ([self doDeviceVersion] <= 5) ? [UIScreen mainScreen].bounds.size.height:self.scrolOffsetY;
+    CGFloat offsetY =self.scrolOffsetY;
+//    ([self doDeviceVersion] <= 5) ? [UIScreen mainScreen].bounds.size.height:;
     CGPoint point = self.keyScrollView.contentOffset;
     alpha =  point.y/offsetY;
+    if (alpha>0)
+    {
+        self.navigationController.navigationBar.hidden = NO;
+    }else
+    {
+        self.navigationController.navigationBar.hidden = YES;
+    }
     alpha = (alpha <= 0)?0:alpha;
     alpha = (alpha >= 1)?1:alpha;
     //设置导航条上的标签是否跟着透明
@@ -118,28 +126,28 @@ static CGFloat alpha = 0;
 
 }
 
-
-- (NSString*) doDevicePlatform
-{
-    size_t size;
-    int nR = sysctlbyname("hw.machine", NULL, &size, NULL, 0);
-    char *machine = (char *)malloc(size);
-    nR = sysctlbyname("hw.machine", machine, &size, NULL, 0);
-    NSString *platform = [NSString stringWithCString:machine encoding:NSUTF8StringEncoding];
-    free(machine);
-    
-    return 	platform;
-}
-
-- (NSInteger)doDeviceVersion{
-
-    //判断手机型号
-    NSArray * arr = [[self doDevicePlatform] componentsSeparatedByString:@","];
-    NSInteger deviceVersion = 0;
-    if ([arr.firstObject containsString:@"iPhone"]) {
-        
-        deviceVersion  = [[arr.firstObject substringWithRange:(NSRange){6,1}] integerValue];
-    }
-    return deviceVersion;
-}
+//有bug
+//- (NSString*) doDevicePlatform
+//{
+//    size_t size;
+//    int nR = sysctlbyname("hw.machine", NULL, &size, NULL, 0);
+//    char *machine = (char *)malloc(size);
+//    nR = sysctlbyname("hw.machine", machine, &size, NULL, 0);
+//    NSString *platform = [NSString stringWithCString:machine encoding:NSUTF8StringEncoding];
+//    free(machine);
+//    
+//    return 	platform;
+//}
+//
+//- (NSInteger)doDeviceVersion{
+//
+//    //判断手机型号
+//    NSArray * arr = [[self doDevicePlatform] componentsSeparatedByString:@","];
+//    NSInteger deviceVersion = 0;
+//    if ([arr.firstObject containsString:@"iPhone"]) {
+//        
+//        deviceVersion  = [[arr.firstObject substringWithRange:(NSRange){6,1}] integerValue];
+//    }
+//    return deviceVersion;
+//}
 @end
